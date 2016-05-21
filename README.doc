@@ -1,0 +1,4 @@
+My assumptions: 
+Task 1
+1. Download the log file each time you run the script (in case the file can be changed)
+2. The format of the log can not be changed
