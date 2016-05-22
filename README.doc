@@ -6,3 +6,7 @@ Task 1
 2. The format of the log can not be changed
 3. Page views - All requests of kind GET and POST.
 4. Recognizing the list of broken and/or relocated urls by requests with responses different of "200". 
+
+Task 2
+1. Recognizing the "click" event by looking for the 'click?pi' string in each and every row of the log file.
+
