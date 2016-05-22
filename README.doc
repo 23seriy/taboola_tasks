@@ -1,4 +1,8 @@
+# executing the script:  taboola_access_log_analysis_ex1.sh ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
+
 My assumptions: 
 Task 1
 1. Download the log file each time you run the script (in case the file can be changed)
 2. The format of the log can not be changed
+3. Page views - All requests of kind GET and POST.
+4. Recognizing the list of broken and/or relocated urls by requests with responses different of "200". 
