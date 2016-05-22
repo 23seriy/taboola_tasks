@@ -18,4 +18,4 @@ gzip -d $log_file_name
 ls -lh $log_file_name
 
 echo "sorted list of clients:"
-cat $log_file_name | awk '{print$1}' | sort | uniq -c | sort 
+cat $log_file_name | grep -E "GET|POST" | awk '{print$1}' | sort | uniq -c | sort 
