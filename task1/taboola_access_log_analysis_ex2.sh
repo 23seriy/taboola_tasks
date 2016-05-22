@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$#" -ne 1 ]; then
+   echo "ERROR: The script requires one parameter - log URL!"
+   exit 1
+fi
+
 url_path=$1
 log_file_name=access_log
 
