@@ -1,4 +1,40 @@
-# executing the script:  taboola_access_log_analysis_ex1.sh ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
+Solution: 
+Clone the git@github.com:23seriy/taboola_tasks.git
+cd taboola_tasks
+
+Task 1:
+1. 
+cd task1
+taboola_access_log_analysis_ex1.sh ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
+
+2. 
+cd task1
+taboola_access_log_analysis_ex2.sh ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
+
+Task 2: 
+a.
+cd task2
+./taboola_second_task.py
+
+b. In order to verify the user­events sending mechanism of the widget I would use Selenium to run repeatable tests against the widgets.
+You can record different scenarios(with Selenium IDE) and the compare the collected information with the parsed access log of Nginx. 
+
+It is very flexible framework compatible with many browsers.
+
+Task 3: 
+How to push a small change to the git repo: 
+1. Download attached tab00la_calc.pem to your home directory
+2. chmod 600 ~/tab00la_calc.pem
+3. To clone the https://github.com/23seriy/tab00la_calc execute:
+PKEY=~/tab00la_calc.pem git clone ${YOUR_USER}@github.com:23seriy/tab00la_calc.git
+4. cd tab00la_calc
+5. Do your changes, i.e. add new file 'test':
+touch test
+6. Commit the changes:
+	git add test
+	git commit -m "add new test"
+7. git pull 
+8. git push
 
 My assumptions: 
 Task 1
@@ -9,4 +45,3 @@ Task 1
 
 Task 2
 1. Recognizing the "click" event by looking for the 'click?pi' string in each row of the log file.
-
