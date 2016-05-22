@@ -8,9 +8,9 @@ f1.close()
 
 ips = []
 for line in lines:
-  if "click" in line:
+  if "click?pi" in line:
      ips.append(line.split()[0])				
 			 
 ips.sort()
 top = Counter(ips).most_common(1)
-print(top[0][0])
+print("IP with the most click events is:  " + top[0][0])
